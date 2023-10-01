@@ -37,7 +37,7 @@ const Book = () => {
         if (navigator.mediaDevices) {
             navigator.mediaDevices
                 .getUserMedia({
-                    video: { facingMode: 'environment', width: 720, height: 720 },
+                    video: { facingMode: 'user', width: 720, height: 720 },
                     audio: false
                 })
                 .then((stream) => {
