@@ -10,9 +10,10 @@ const Header = () => {
     useEffect(() => {
         getUser()
     }, [])
+
     const loginorlogout = () => {
+        console.log("cleaning")
         if (user) {
-            console.log("cleaning")
             localStorage.clear()
             window.localStorage.clear()
         }
@@ -39,7 +40,7 @@ const Header = () => {
                 </Link>
                 <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
                     <button onClick={loginorlogout} className="inline-flex items-center border-2 border-gray-400 py-1 px-3 focus:outline-none rounded-lg text-gray-50 cursor-pointer text-base">
-                        <div className='hidden md:block'>
+                        <div className='block'>
                             {user ? "Logout" : "Login/Signup"}
                         </div>
                         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
