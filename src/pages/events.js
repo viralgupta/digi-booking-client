@@ -51,9 +51,9 @@ export default function Events() {
                                     <div className="bg-gray-800 p-6 rounded-lg">
                                         <img className="h-40 rounded w-full object-cover object-center mb-6" src={event.picture} alt="content" />
                                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">{event.type}</h3>
-                                        <h2 className="text-lg text-gray-100 font-medium title-font mb-4">{event.name}</h2>
-                                        <p className="leading-relaxed text-base">{event.about}</p>
-                                        <Link href={`/book/${event._id}`} className="text-white cursor-pointer rounded-md w-auto hover:text-blue-500 border p-2 m-1">Book Show -&gt;</Link>
+                                        <h2 className="text-lg text-gray-100 font-medium title-font">{event.name}</h2>
+                                        <p className="leading-relaxed text-base mb-4">{event.about}</p>
+                                        <Link href={`/book/${event._id}`} className="text-white cursor-pointer rounded-md w-auto hover:text-blue-500 border p-1">Book Show -&gt;</Link>
                                     </div>
                                 </div>
                             ))}
