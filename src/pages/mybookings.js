@@ -48,6 +48,15 @@ const Mybookings = () => {
       }
 
     useEffect(() => {
+        // eslint-disable-next-line
+    }, [])
+
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem("user"))
+        let token = localStorage.getItem('token');
+        if (!user || !token) {
+            router.push('/login')
+        }
         getmybookings()
         // eslint-disable-next-line
     }, [])
