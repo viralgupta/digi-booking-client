@@ -12,6 +12,7 @@ const Header = () => {
     }, [])
     const loginorlogout = () => {
         if (user) {
+            console.log("cleaning")
             localStorage.clear()
             window.localStorage.clear()
         }
