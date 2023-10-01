@@ -12,8 +12,8 @@ const Header = () => {
     }, [])
     const loginorlogout = () => {
         if (user) {
-            localStorage.removeItem("token")
-            localStorage.removeItem("user")
+            localStorage.clear()
+            window.localStorage.clear()
         }
         window.location = '/login'
     }
