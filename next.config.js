@@ -3,23 +3,23 @@ module.exports = () => {
     return [
       {
         source: "/api/user/login",
-        destination: "https://e87d-103-4-221-252.ngrok-free.app/api/user/login",
+        destination: "https://46aa-103-4-220-252.ngrok-free.app/api/user/login",
       },
       {
         source: "/api/user/signup",
-        destination: "https://e87d-103-4-221-252.ngrok-free.app/api/user/signup",
+        destination: "https://46aa-103-4-220-252.ngrok-free.app/api/user/signup",
       },
       {
         source: "/api/user/bookevent",
-        destination: "https://e87d-103-4-221-252.ngrok-free.app/api/user/bookevent",
+        destination: "https://46aa-103-4-220-252.ngrok-free.app/api/user/bookevent",
       },
       {
         source: "/api/user/myevents",
-        destination: "https://e87d-103-4-221-252.ngrok-free.app/api/user/myevents",
+        destination: "https://46aa-103-4-220-252.ngrok-free.app/api/user/myevents",
       },
       {
         source: "/api/event/getevents",
-        destination: "https://e87d-103-4-221-252.ngrok-free.app/api/event/getevents",
+        destination: "https://46aa-103-4-220-252.ngrok-free.app/api/event/getevents",
       }
     ];
   };
